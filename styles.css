@@ -1,0 +1,29 @@
+#question-wrapper {
+	width: 600px;
+	min-height: 500px;
+	margin: auto;
+	text-align: center;
+	background-color: #cdcbd6;
+	border-radius: 15px;
+}
+
+h1 {
+	padding: 20% 10% 0;
+}
+
+#ask {
+	width: 20%;
+	margin: 20px auto;
+}
+
+button {
+	border: none;
+	border-radius: 5px;
+	background-color: #cd336a;
+	padding: 30px;
+	font-size: 30px;
+}
+
+button:hover {
+	cursor: pointer;
+}
