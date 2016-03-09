@@ -4,7 +4,7 @@ body {
 
 #question-wrapper {
 	width: 600px;
-	min-height: 500px;
+	min-height: 300px;
 	margin: auto;
 	text-align: center;
 	background-color: #cdcbd6;
@@ -14,17 +14,19 @@ body {
 h1 {
 	font-size: 30px;
 	font-weight: bold;
-	padding: 20% 10% 0;
+	padding: 15% 10% 0;
 }
  h2 {
- 	margin-top: 20px;
+	padding: 5% 10% 10%;
  	font-size: 20px;
  	font-weight: bold;
  }
 
 #ask {
-	width: 40%;
-	margin: 20px auto;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding: 20px 0 0;
 }
 
 button {
@@ -40,7 +42,11 @@ button:hover {
 	cursor: pointer;
 }
 
+#question-button {
+	margin-right: 5px;
+}
+
 #answer {
+	margin-left: 5px;
 	background-color: green;
-	margin-left: 10px;
 }
