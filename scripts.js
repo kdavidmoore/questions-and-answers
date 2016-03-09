@@ -34,6 +34,7 @@ addQuestion(myArray, "HTML elements are positioned ____ by default", "static", 3
 addQuestion(myArray, "Set the z-index to ____ to position an element behind text", "-1", 9); */
 
 var questionArray = [];
+var theAnswer = "";
 
 questionArray.push(new classQuizItem("What entity keeps a record between a URL and a given IP address", "ICANN", 5));
 questionArray.push(new classQuizItem("Name one type of NoSQL database", "MongoDB, Dynamo, CouchDB, etc.", 6));
@@ -55,4 +56,13 @@ function getQuestionAndStudent() {
     questionText.innerHTML = questionArray[randQuestion].question + ", " + students[randStudent] + "?";
     var difficultyText = document.getElementById('diff');
     difficultyText.innerHTML = "Difficulty: " + questionArray[randQuestion].difficulty.toString();
+    theAnswer = questionArray[randQuestion].answer;
+}
+
+function showAnswer() {
+    var questionText = document.getElementById('question');
+    var difficultyText = document.getElementById('diff');
+    difficultyText.innerHTML = '';
+    questionText.innerHTML = '';
+    questionText.innerHTML = theAnswer;
 }
